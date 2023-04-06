@@ -4,8 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex bg-gray-200 justify-between px-5 py-3 rounded-sm text-xl font-bold sticky top-0 z-10'>
-            <Link  to="/" className='flex items-center gap-2'>
+        <div className='flex bg-gray-200 justify-between px-5 py-3 rounded-sm text-xl font-bold sticky top-0 z-10 '>
+            <Link  to="/" className='flex items-center gap-2 text-blue-500'>
                 <span><FaPage4></FaPage4></span>
                 <h1>NextPage</h1>
            </Link>
