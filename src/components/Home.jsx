@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div className='flex justify-between w-full mt-24 h-[calc(100vh-52px)] '>
+        <div className='flex justify-between w-11/12 mt-24 h-[calc(100vh-52px)] '>
            <div>
            <div className="badge badge-warning ">ON SALE!</div>
                 <div className='text-4xl font-bold my-5'>A reader lives a <br /> thousand lives <span className='text-blue-500'> before he dies</span> </div>

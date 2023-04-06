@@ -1,10 +1,15 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData,useNavigation } from 'react-router-dom';
+import Loading from './Loading';
 
 const BookDetails = () => {
     const data = useLoaderData()
     console.log(data);
     const {title,subtitle,authors,year,image,publisher,desc,rating,price} = data
+    const navigation=useNavigation()
+    if(navigation.state==='loading'){
+        return <Loading></Loading>
+    }
     return (
         <div className='flex justify-between border border-sky-500 m-16'>
             <div className='w-full border border-sky-800 m-16'>

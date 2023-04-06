@@ -11,6 +11,7 @@ import Home from './components/Home';
 import Book from './components/Book';
 import About from './components/About';
 import BookDetails from './components/BookDetails';
+import Loading from './components/Loading';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path:'about',
         element:<About></About>
+      },
+      {
+        path:'loading',
+        element:<Loading></Loading>
       }
     ]
   }

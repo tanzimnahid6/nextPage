@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigation } from 'react-router-dom';
+
 
 const SingleBook = ({book}) => {
-    
+    const navigation = useNavigation()
     const {image,title,price,isbn13,subtitle} = book
+    
     return (
             <Link to={`/details/${isbn13}`}>
                   <div className='cursor-pointer shadow-lg relative overflow-hidden transition duration-500 transform hover:-translate-y-3'>
